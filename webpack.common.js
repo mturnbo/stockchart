@@ -28,7 +28,8 @@ module.exports = {
   devtool: 'source-map',
   plugins: [
     HtmlWebpackPluginConfig,
-    MiniCssExtractPluginConfig
+    MiniCssExtractPluginConfig,
+    CopyWebpackPluginConfig
   ],
   module: {
     rules: [
