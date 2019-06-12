@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const paths = require('./paths');
 
 const env = process.env.NODE_ENV;
@@ -7,12 +8,17 @@ const env = process.env.NODE_ENV;
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   template: `${paths.APP}/index.html`,
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
+  favicon: `${paths.ASSETS}/images/favicon.ico`
 });
 
 const MiniCssExtractPluginConfig = new MiniCssExtractPlugin({
   filename: 'styles.css'
 });
+
+const CopyWebpackPluginConfig = new CopyWebpackPlugin([
+  { from: 'assets/images', to: 'assets/images' }
+]);
 
 module.exports = {
   mode: env,
