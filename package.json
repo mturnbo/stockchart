@@ -1,0 +1,14 @@
+{
+  "name": "stockchart",
+  "description": "Stock Chart components",
+  "version": "1.0.0",
+  "author": "Marcus Turnbo <marcus.turnbo@morningstar.com>",
+  "license": "MIT",
+  "devDependencies": {
+
+  },
+  "dependencies": {
+
+  },
+  "main": "src/index.js"
+}
