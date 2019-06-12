@@ -2,8 +2,12 @@ module.exports = {
 	extends: "airbnb",
 	env: {
 		browser: true,
-		es6: true
+		es6: true,
+    jest: true
 	},
+  plugins: [
+    "jest"
+  ],
 	settings: {
 		'import/resolver': {
 			webpack: {
