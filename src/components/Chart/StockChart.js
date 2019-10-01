@@ -16,6 +16,13 @@ const StockChart = () => {
   ];
 
   const options = {
+    colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066',
+      '#eeaaee', '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+    chart: {
+      style: {
+        fontFamily: 'Helvetica, sans-serif'
+      }
+    },
     rangeSelector: {
       selected: 1
     },
